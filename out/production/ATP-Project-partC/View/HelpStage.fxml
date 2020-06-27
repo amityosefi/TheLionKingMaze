@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="304.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.helpcontroller">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="212.0" layoutY="8.0" prefHeight="47.0" prefWidth="92.0" text="Help" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="34.0" layoutY="55.0" prefHeight="21.0" prefWidth="339.0" text="1. The player is Simaba and needs to get to Nala" />
+      <Label layoutX="34.0" layoutY="124.0" prefHeight="21.0" prefWidth="591.0" text="3. Use the arrow keys on the keyboard or use the mouse to move inside the maze" />
+      <Label layoutX="34.0" layoutY="162.0" prefHeight="21.0" prefWidth="448.0" text="4. If you can't reach Nala click on the &quot;Solve Maze&quot; for guidance" />
+      <Label layoutX="34.0" layoutY="90.0" prefHeight="21.0" prefWidth="448.0" text="2. To create a maze insert the size and click on &quot;Generate Maze&quot;" />
+   </children>
+</AnchorPane>
