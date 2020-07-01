@@ -2,7 +2,7 @@
   <artifact type="jar" name="ATP-Project-partC:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/ATP_Project_partC_jar</output-path>
     <root id="archive" name="ATP-Project-partC.jar">
-      <element id="module-output" name="ATP-Project-partC" />
+      <element id="module-output" name="TheLionKingMaze" />
       <element id="extracted-dir" path="$PROJECT_DIR$/out/artifacts/ATPProjectJAR/ATPProjectJAR.jar" path-in-jar="/" />
     </root>
   </artifact>
