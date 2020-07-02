@@ -2,10 +2,9 @@ package Server;
 
 import algorithms.search.Solution;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.*;
+import java.net.URL;
+import java.util.Objects;
 import java.util.Properties;
 
 public class Configurations {
@@ -29,26 +28,51 @@ public class Configurations {
         }
     }
 
-    public static String loadProperty(String str)
-    {
-        String propertyValue = "";
-
-        try (InputStream input = Configurations.class.getClassLoader().getResourceAsStream("Resources/config.properties"))
+    /*
+        public static String loadProperty(String str)
         {
-            if (input == null) {
-                System.out.println("Sorry, unable to find config.properties");
-                return null;
+            String propertyValue = "";
+
+            try (InputStream input = Configurations.class.getClassLoader().getResourceAsStream("Resources/config.properties"))
+            {
+                if (input == null) {
+                    System.out.println("Sorry, unable to find config.properties");
+                    return null;
+                }
+
+                //load a config.properties file from class path, inside static method
+                Properties prop = new Properties();
+                prop.load(input);
+                propertyValue = prop.getProperty(str);
+
+            } catch (IOException ex) {
+                ex.printStackTrace();
             }
 
-            //load a config.properties file from class path, inside static method
-            Properties prop = new Properties();
-            prop.load(input);
-            propertyValue = prop.getProperty(str);
-
-        } catch (IOException ex) {
-            ex.printStackTrace();
+            return propertyValue;
         }
 
-        return propertyValue;
+     */
+    public static String loadProperty(String str) {
+        Properties prop = new Properties();
+
+        try {
+            // the configuration file name
+            String fileName = "config.properties";
+            ClassLoader classLoader = Configurations.class.getClassLoader();
+
+            // Make sure that the configuration file exists
+            URL res = Objects.requireNonNull(classLoader.getResource(fileName),
+                    "Can't find configuration file app.config");
+
+            InputStream is = new FileInputStream(res.getFile());
+
+            // load the properties file
+            prop.load(is);
+
+        } catch (IOException e) {
+            System.out.println("didnt work");
+        }
+        return prop.getProperty(str);
     }
 }
