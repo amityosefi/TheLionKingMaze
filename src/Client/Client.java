@@ -18,7 +18,7 @@ public class Client {
     public void communicateWithServer() {
         try{
             Socket socket = new Socket(serverIP, port);
-            System.out.println("Client is connected to server!");
+            //System.out.println("Client is connected to server!");
             clientStrategy.clientStrategy(socket.getInputStream(), socket.getOutputStream());
             socket.close();
         }catch (IOException e){

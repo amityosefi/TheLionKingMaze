@@ -12,7 +12,7 @@ public class Configurations {
 
     public static void configurationsInit() {
 
-        try (OutputStream output = new FileOutputStream("config.properties")) {
+        try (OutputStream output = new FileOutputStream("Resources/config.properties")) {
 
             Properties prop = new Properties();
 
@@ -33,7 +33,7 @@ public class Configurations {
     {
         String propertyValue = "";
 
-        try (InputStream input = Configurations.class.getClassLoader().getResourceAsStream("config.properties"))
+        try (InputStream input = Configurations.class.getClassLoader().getResourceAsStream("Resources/config.properties"))
         {
             if (input == null) {
                 System.out.println("Sorry, unable to find config.properties");
