@@ -11,6 +11,6 @@
         <Label layoutX="48.0" layoutY="179.0" prefHeight="21.0" prefWidth="385.0" text="The programmers are:" />
         <Label layoutX="48.0" layoutY="212.0" prefHeight="21.0" prefWidth="488.0" text="Shahar Horovitz - second year of imformation and software engineer" />
         <Label layoutX="48.0" layoutY="244.0" prefHeight="21.0" prefWidth="488.0" text="Amit Yosefi - second year of imformation and software engineer" />
-      <Button layoutX="126.0" layoutY="313.0" mnemonicParsing="false" onAction="#newGmae" text="new game" />
+      <Button layoutX="126.0" layoutY="313.0" mnemonicParsing="false" onAction="#newGame" text="new game" />
     </children>
 </AnchorPane>
