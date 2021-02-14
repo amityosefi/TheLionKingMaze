@@ -382,6 +382,10 @@ public class MyViewController implements IView, Observer, Initializable {
             Stage stage = new Stage();
             stage.setScene(new Scene(root1));
             stage.show();
+
+            aboutcontroller aboutController = fxmlLoader.getController();
+            aboutController.setViewModel1(viewModel);
+
         } catch (Exception e){
             System.out.println("There is problem with the about");
         }

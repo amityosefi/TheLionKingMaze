@@ -1,6 +1,7 @@
 import Model.IModel;
 import Model.MyModel;
 import View.MyViewController;
+import View.aboutcontroller;
 import ViewModel.MyViewModel;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -21,11 +22,12 @@ public class Main extends Application {
 
         IModel model = new MyModel();
         MyViewModel viewModel = new MyViewModel(model);
-        MyViewController view = fxmlLoader.getController();
-        view.setViewModel(viewModel);
-        viewModel.addObserver(view);
-        view.setResizeEvent(scene);
 
+        MyViewController myViewController = fxmlLoader.getController();
+        myViewController.setViewModel(viewModel);
+
+        viewModel.addObserver(myViewController);
+        myViewController.setResizeEvent(scene);
         primaryStage.setOnCloseRequest(e->viewModel.CloseApp());
     }
 

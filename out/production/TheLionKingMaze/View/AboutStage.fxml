@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="424.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.aboutcontroller">
+<AnchorPane prefHeight="424.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.aboutcontroller">
     <children>
         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="30.0" prefHeight="45.0" prefWidth="363.0" text="About" textAlignment="CENTER" />
         <Label layoutX="48.0" layoutY="111.0" prefHeight="21.0" prefWidth="295.0" text="The maze programmed by DFS algorithm" />
@@ -11,5 +11,6 @@
         <Label layoutX="48.0" layoutY="179.0" prefHeight="21.0" prefWidth="385.0" text="The programmers are:" />
         <Label layoutX="48.0" layoutY="212.0" prefHeight="21.0" prefWidth="488.0" text="Shahar Horovitz - second year of imformation and software engineer" />
         <Label layoutX="48.0" layoutY="244.0" prefHeight="21.0" prefWidth="488.0" text="Amit Yosefi - second year of imformation and software engineer" />
+      <Button layoutX="126.0" layoutY="313.0" mnemonicParsing="false" onAction="#newGmae" text="new game" />
     </children>
 </AnchorPane>
