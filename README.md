@@ -15,3 +15,5 @@ Using Bridge design pattern, and search algorithms.
 
 # Testing
 To run the tests files of each module go to src/test and run the test of the required module. 
+
+https://giphy.com/gifs/odsFarbtJLfALXIqfw/html5
