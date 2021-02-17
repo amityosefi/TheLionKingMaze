@@ -18,8 +18,4 @@ To run the tests files of each module go to src/test and run the test of the req
 
 
 
-<img src="https://img.shields.io/badge/made%20by-adinomberg-blue.svg" >
-
-
-
-<img src="https://giphy.com/gifs/odsFarbtJLfALXIqfw/html5" >
+<img src="https://giphy.com/gifs/odsFarbtJLfALXIqfw/html5"></p>
