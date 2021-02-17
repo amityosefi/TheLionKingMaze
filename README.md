@@ -26,7 +26,9 @@ A client-server maze game.
 <img src="https://media.giphy.com/media/QMHC0TgLVzJmnMCUSJ/giphy.gif" width="60%"></p>
 
 
-**Technologies**:  Java, GUI made with JavaFX and CSS. 
+# Technologies:
+
+Java, GUI made with JavaFX and CSS. 
 
 Using Bridge design pattern, and search algorithms.
 
