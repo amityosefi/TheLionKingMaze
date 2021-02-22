@@ -43,6 +43,8 @@ Java, GUI made with JavaFX and CSS.
 
 Using Bridge design pattern, and search algorithms.
 
+Using a software architectural pattern: Model–view–viewmodel (MVVM)
+
 # How to run the project 
 
 1. Clone or download the project.
